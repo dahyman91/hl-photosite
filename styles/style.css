@@ -45,6 +45,10 @@ a {
   text-align: center;
 }
 
+b {
+  font-weight: 10000;
+}
+
 footer {
   display: inline;
 }
