@@ -12,6 +12,10 @@
   box-sizing: border-box;
 }
 
+body {
+  /* height: 100%; */
+}
+
 h1 {
   font-family: "Permanent Marker", Cursive;
   font-size: 30px;
@@ -26,6 +30,7 @@ h6 {
   font-style: normal;
   text-align: center;
 }
+
 a {
   margin: 10px;
   /* display: block; */
@@ -41,9 +46,7 @@ a {
 }
 
 footer {
-  display: flex;
-  margin-left: 40px;
-  margin-top: 60px;
+  display: inline;
 }
 
 /* Mobile */
@@ -116,7 +119,7 @@ button span {
 }
 
 .slider-nav .arrow {
-  flex: 0 0 0 15%;
+  flex: 0 0 0 10%;
 }
 
 .slider-nav a {
@@ -150,6 +153,98 @@ button span {
 
 /* Desktop */
 
-img:hover {
-  cursor: pointer;
+@media only screen and (min-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+  }
+
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  .container {
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .col-1 {
+    flex-basis: 13%;
+    align-self: flex-start;
+    /* background-color: red; */
+    /* animation: fadeImg 0.8s; */
+  }
+
+  .col-2 {
+    margin: 40px auto;
+    height: 80vh;
+    width: 75%;
+  }
+
+  img:hover {
+    cursor: pointer;
+  }
+
+  /* h1 {
+
+  } */
+
+  h6 {
+    /* font-family: prestige-elite-std, monospace;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    */
+    text-align: left;
+  }
+
+  a {
+    display: block;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: left;
+  }
+
+  p {
+    font-family: prestige-elite-std, monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  footer {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 60px;
+  }
+
+  /* Journal Styling */
+  img {
+    max-height: 85vh;
+    min-height: 550px;
+    width: auto;
+    display: none;
+    margin: auto;
+    margin-top: 20px;
+    min-width: 376px;
+  }
+
+  .menu {
+    margin-top: 50px;
+    margin-left: 0px;
+    max-width: 90%;
+    text-align: left;
+  }
+
+  /* About Page Styling */
+
+  @keyframes fadeImg {
+    from {
+      opacity: 0;
+    }
+  }
 }
