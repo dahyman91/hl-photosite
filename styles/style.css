@@ -1,3 +1,5 @@
+/* General */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,4 +10,146 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Permanent Marker", Cursive;
+  font-size: 30px;
+  color: black;
+  line-height: 45px;
+}
+
+h6 {
+  font-family: prestige-elite-std, monospace;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  text-align: center;
+}
+a {
+  margin: 10px;
+  /* display: block; */
+  font-family: prestige-elite-std, monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: black;
+  font-weight: 400;
+  /* line-height: 25px; */
+  text-decoration: none;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  margin-left: 40px;
+  margin-top: 60px;
+}
+
+/* Mobile */
+
+.menu {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+/* Slider */
+img {
+  display: none;
+  margin: auto;
+  margin-top: 20px;
+}
+
+img.active {
+  display: block;
+  animation: fadeImg 0.4s;
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  /* align-self: center; */
+  text-decoration: none;
+  background: transparent;
+  padding: 0px 5px;
+  color: #3c376f;
+  font-size: 2rem;
+  margin: 0 auto;
+  /* width: 5rem; */
+}
+
+button span {
+  position: relative;
+  display: inline-block;
+  transition: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.previous:hover span {
+  transform: translateX(1px) scale(1.2);
+}
+
+.next:hover span {
+  transform: translateX(1px) scale(1.2);
+}
+
+.slider-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.slider-nav li {
+  display: flex;
+  flex: 2;
+  text-align: center;
+}
+
+.slider-nav .arrow {
+  flex: 0 0 0 15%;
+}
+
+.slider-nav a {
+  flex-basis: 100%;
+  display: flex;
+}
+
+.slider-nav span {
+  display: block;
+  width: 100%;
+}
+.hidden {
+  display: none;
+}
+
+/* About Page */
+.about {
+  text-align: left;
+}
+
+.about h1 {
+  text-align: center;
+  margin: 10px;
+  /* display: none; */
+}
+
+.about p {
+  width: 90%;
+  margin: auto;
+}
+
+/* Desktop */
+
+img:hover {
+  cursor: pointer;
 }
