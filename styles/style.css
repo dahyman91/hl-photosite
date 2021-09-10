@@ -70,6 +70,7 @@ img {
   display: none;
   margin: auto;
   margin-top: 20px;
+  max-height: 100%;
 }
 
 img.active {
@@ -178,7 +179,7 @@ button span {
   }
 
   .col-1 {
-    flex-basis: 13%;
+    flex-basis: 20%;
     align-self: flex-start;
     /* background-color: red; */
     /* animation: fadeImg 0.8s; */
@@ -187,7 +188,7 @@ button span {
   .col-2 {
     margin: 40px auto;
     height: 80vh;
-    width: 75%;
+    width: 70%;
   }
 
   img:hover {
