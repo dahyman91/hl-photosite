@@ -1,0 +1,22 @@
+{
+  "name": "hl-photosite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dahyman91/hl-photosite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dahyman91/hl-photosite/issues"
+  },
+  "homepage": "https://github.com/dahyman91/hl-photosite",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
