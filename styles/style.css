@@ -1,0 +1,351 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 30px;
+  color: grey;
+  line-height: 45px;
+  text-align: center;
+  margin: auto;
+  font-family: "Druk Wide Bold";
+  /* font-style: normal; */
+}
+
+a {
+  margin: auto;
+  /* display: block; */
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: grey;
+  /* line-height: 25px; */
+  text-decoration: none;
+}
+
+b {
+  font-weight: bold;
+}
+
+footer {
+  display: inline;
+}
+
+/* Nav */
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: flex;
+  }
+}
+
+.menu {
+  width: 100%;
+  margin: auto;
+  text-align: left;
+}
+
+.col-2 {
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+/* Slider */
+.slider {
+  width: 100%;
+}
+
+.slider-home {
+  width: 1005;
+}
+img {
+  display: none;
+  margin: auto;
+  margin-top: 20px;
+  max-height: 100%;
+}
+
+img.active {
+  display: block;
+  animation: fadeImg 0.4s;
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  /* align-self: center; */
+  text-decoration: none;
+  background: transparent;
+  padding: 0px 5px;
+  color: #3c376f;
+  font-size: 2rem;
+  margin: 0 auto;
+  /* width: 5rem; */
+}
+
+button span {
+  position: relative;
+  display: inline-block;
+  transition: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.previous:hover span {
+  transform: translateX(1px) scale(1.2);
+}
+
+.next:hover span {
+  transform: translateX(1px) scale(1.2);
+}
+
+.slider-nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.slider-nav li {
+  display: flex;
+  flex: 2;
+  text-align: center;
+}
+
+.slider-nav .arrow {
+  flex: 0 0 0 10%;
+}
+
+.slider-nav a {
+  flex-basis: 100%;
+  display: flex;
+}
+
+.slider-nav span {
+  display: block;
+  width: 100%;
+}
+.hidden {
+  display: none;
+}
+
+/* About Page */
+.about {
+  text-align: left;
+}
+
+.about h1 {
+  text-align: center;
+  margin: 10px;
+  /* display: none; */
+}
+
+.about p {
+  width: 90%;
+  margin: auto;
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+  }
+
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  .container {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .col-1 {
+    flex-basis: 20%;
+    align-self: flex-start;
+    min-width: 260px;
+    text-align: left;
+    /* background-color: red; */
+    /* animation: fadeImg 0.8s; */
+  }
+  .heading {
+    text-align: left;
+    padding-top: 17px;
+  }
+
+  h1 {
+    text-align: left;
+    padding-left: 0.2rem;
+  }
+
+  .col-2 {
+    margin: auto;
+    height: 80vh;
+    width: 70%;
+  }
+
+  .about-page .col-2 {
+    width: 100%;
+  }
+
+  .col-2 p {
+    text-align: left;
+    font-size: 2.6rem;
+    line-height: 2.35rem;
+  }
+
+  img:hover {
+    cursor: pointer;
+  }
+
+  /* h1 {
+
+  } */
+
+  a {
+    display: block;
+    font-size: 0.8rem;
+    /* line-height: px; */
+    font-family: "IBM Plex Mono", monospace;
+  }
+  .menu a {
+    text-align: left;
+    letter-spacing: 0.27rem;
+    line-height: 3rem;
+    font-size: 0.8rem;
+  }
+  p {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: grey;
+  }
+
+  footer {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 60px;
+  }
+
+  /* Journal Styling */
+  img {
+    max-height: 85vh;
+    min-height: 550px;
+    width: auto;
+    display: none;
+    margin: auto;
+    padding-top: 20px;
+    /* margin-top: 20px; */
+    min-width: 376px;
+  }
+  .img-text {
+    width: 30vw;
+    margin-left: 3vw;
+  }
+  .menu {
+    margin: 15% 5px;
+    max-width: 90%;
+  }
+
+  /* About Page Styling */
+
+  @keyframes fadeImg {
+    from {
+      opacity: 0;
+    }
+  }
+}
+
+p {
+  font-family: prestige-elite-std, monospace;
+  font-weight: 400;
+  font-style: normal;
+  margin: auto;
+}
+
+footer {
+  display: inline-block;
+  /* margin: auto; */
+}
+
+.about-text {
+  font-family: "Cooper BT";
+  text-align: left;
+  color: white;
+}
+
+.about-text p {
+  font-family: "Cooper BT";
+  text-align: left;
+  color: white;
+}
+
+#name {
+  /* text-decoration: underline red; */
+}
+
+#photographer {
+  text-decoration: underline red;
+
+  /* font-size: 80px; */
+}
+#journalist {
+  /* font-size: 80px; */
+  text-decoration: underline red;
+}
+
+.about-page {
+  background-color: #ffe673;
+}
+@import url("https://fonts.googleapis.com/css?family=Lato:100");
+
+.about-page {
+  animation: changeBackgroundColor 7s infinite;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: #001f3f;
+  }
+  50% {
+    background-color: #ff4136;
+  }
+  100% {
+    background-color: #001f3f;
+  }
+}
+.cu {
+  font-family: "WeddingTextW01";
+  color: white;
+  padding: 40px;
+}
+
+.signature {
+  padding-left: 50px;
+  font-family: "Cooper BT";
+  color: white;
+}
