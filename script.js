@@ -11,6 +11,8 @@ let count = 0;
 
 function showNextItem() {
   items[count].classList.remove("active");
+  imageDescriptions[count]?.classList.add("hidden");
+
   if (count < itemCount - 1) {
     count++;
   } else {
@@ -18,12 +20,11 @@ function showNextItem() {
   }
   items[count].classList.add("active");
   imageDescriptions[count]?.classList.remove("hidden");
-  imageDescriptions[count + 1]?.classList.add("hidden");
-  imageDescriptions[count - 1]?.classList.add("hidden");
 }
 
 function showPreviousItem() {
   items[count].classList.remove("active");
+  imageDescriptions[count]?.classList.add("hidden");
 
   if (count > 0) {
     count--;
@@ -32,8 +33,6 @@ function showPreviousItem() {
   }
   items[count].classList.add("active");
   imageDescriptions[count]?.classList.remove("hidden");
-  imageDescriptions[count + 1]?.classList.add("hidden");
-  imageDescriptions[count - 1]?.classList.add("hidden");
 }
 
 function keyPress(e) {
@@ -53,4 +52,4 @@ function showNextText() {
 //Event Handlers
 nextItem.addEventListener("click", showNextItem);
 previousItem.addEventListener("click", showPreviousItem);
-homeCurrImg.addEventListener("click", showNextItem);
+// homeCurrImg.addEventListener("click", showNextItem);

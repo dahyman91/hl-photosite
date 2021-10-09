@@ -12,37 +12,35 @@
   box-sizing: border-box;
 }
 
-body {
-  /* height: 100%; */
-}
-
 h1 {
-  font-family: "Permanent Marker", Cursive;
   font-size: 30px;
-  color: black;
+  color: grey;
   line-height: 45px;
+  text-align: center;
+  margin: auto;
+  font-family: prestige-elite-std, monospace;
+  /* font-style: normal; */
 }
 
 h6 {
   font-family: prestige-elite-std, monospace;
-  font-weight: 400;
+  color: grey;
+  /* font-weight: 400; */
   font-size: 18px;
   font-style: normal;
   text-align: center;
 }
 
 a {
-  margin: 10px;
+  margin: auto;
   /* display: block; */
   font-family: prestige-elite-std, monospace;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
-  color: black;
-  font-weight: 400;
+  color: grey;
   /* line-height: 25px; */
   text-decoration: none;
-  text-align: center;
 }
 
 b {
@@ -53,12 +51,18 @@ footer {
   display: inline;
 }
 
-/* Mobile */
+/* Nav */
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: flex;
+  }
+}
 
 .menu {
-  width: 80%;
+  width: 100%;
   margin: auto;
-  text-align: center;
+  text-align: left;
 }
 
 .col-2 {
@@ -70,6 +74,13 @@ img {
 }
 
 /* Slider */
+.slider {
+  width: 100%;
+}
+
+.slider-home {
+  width: 1005;
+}
 img {
   display: none;
   margin: auto;
@@ -176,7 +187,7 @@ button span {
   }
 
   .container {
-    margin: 40px;
+    margin: 0 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -185,14 +196,24 @@ button span {
   .col-1 {
     flex-basis: 20%;
     align-self: flex-start;
+    min-width: 260px;
     /* background-color: red; */
     /* animation: fadeImg 0.8s; */
   }
+  .heading {
+    /* margin: auto; */
+    text-align: center;
+    padding-top: 17px;
+  }
 
   .col-2 {
-    margin: 40px auto;
+    margin: auto;
     height: 80vh;
     width: 70%;
+  }
+
+  .col-2 p {
+    text-align: center;
   }
 
   img:hover {
@@ -209,16 +230,19 @@ button span {
     font-size: 18px;
     font-style: normal;
     */
-    text-align: left;
+    text-align: center;
   }
 
   a {
     display: block;
-    font-size: 30px;
-    line-height: 40px;
-    text-align: left;
+    font-size: 0.8rem;
+    /* line-height: px; */
   }
-
+  .menu a {
+    text-align: left;
+    letter-spacing: 0.3rem;
+    line-height: 3rem;
+  }
   p {
     font-family: prestige-elite-std, monospace;
     font-weight: 400;
@@ -238,15 +262,17 @@ button span {
     width: auto;
     display: none;
     margin: auto;
-    margin-top: 20px;
+    padding-top: 20px;
+    /* margin-top: 20px; */
     min-width: 376px;
   }
-
+  .img-text {
+    width: 30vw;
+    margin-left: 3vw;
+  }
   .menu {
-    margin-top: 50px;
-    margin-left: 0px;
+    margin: 15% 5px;
     max-width: 90%;
-    text-align: left;
   }
 
   /* About Page Styling */
