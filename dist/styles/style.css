@@ -1,4 +1,8 @@
 /* General */
+@font-face {
+  font-family: "Druk Wide Bold";
+  src: url("./druk.woff") format("woff");
+}
 
 * {
   margin: 0;
